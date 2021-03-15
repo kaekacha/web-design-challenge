@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Latitude Analysis</title>
+    <link rel="stylesheet"  href="https://bootswatch.com/cyborg/">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  
+</head>
+
+<body>
+    <!-- Nav Bar elements source: https://getbootstrap.com/docs/4.0/components/navbar/-->
+    <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark">
+
+        <!-- Page Title in Navbar for home page navigation -->
+        <a class="navbar-brand" href="index.html">Latitude Analysis</a>
+
+        <!-- Change navbar style when screen is smaller (toggle to hamburger menu) -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+            <!-- Align navbar elements right -->
+            <ul class="navbar-nav ml-auto">
+                
+                <!-- Create navbar dropdown element for plots pages -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="temp.html">Temperature</a>
+                        <a class="dropdown-item" href="humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                    </div>
+                </li>
+
+                <!-- Navbar Comparison page link -->
+                <li class="nav-item">
+                    <a class="nav-link" href="comparison.html">Comparison</a>
+                </li>
+
+                <!-- Navbar Data page link -->
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class='container'>
+        <div class='row'>
+            <div class='col-md-7'>
+                <div class='box' id="leftbox">
+                    <h1 align="center">Summary: Latitude vs. X</h1>
+                    <hr>
+                    <img src= "Visualizations/Lat_v_Temp.png" align="left" height=220px>
+                    <h4>
+                        This project analyzed weather factors for over 500 cities collected from the OpenWeatherMap API.
+                        The goal was to compare the changes in temperature, cloudiness, humidity and wind speed across different latitudes.
+                        <br>
+                        <br>
+                        The dataset was cleaned and analyzed using the Matplotlib module for Python, which produced the visualizations
+                        provided on this webpage, each with its own explanation and analysis.
+                    </h4>
+                </div>
+            </div>
+            <div class='col-md-5'>
+                <div class='box' align="center" id="rightbox">
+                    <h1 align="center">Visualizations</h1>
+                    <hr>
+                    <div>
+                        <a href="temp.html"><img src= "Visualizations/Lat_v_Temp.png" id="vizimage"></a>
+                        <a href="cloudiness.html"><img src= "Visualizations/Lat_v_Cloudiness.png" id="vizimage"></a>
+                        <a href="humidity.html"><img src= "Visualizations/Lat_v_Humidity.png" id="vizimage"></a>
+                        <a href="windspeed.html"><img src= "Visualizations/Lat_v_WindSpeed.png" id="vizimage"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The following scripts integrate with bootstrap and enable the dropdown menu in the navbar -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+<footer class="page-footer font-small bg-dark">
+    <div class ="footer-copyright text-center py-3" style="color:lightgrey">
+        © Copyright 2020 Ben Anderson
+    </div>
+</footer>
+</html>
