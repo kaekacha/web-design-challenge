@@ -4,53 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Latitude Analysis</title>
-    <link rel="stylesheet"  href="https://bootswatch.com/cyborg/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/yeti/bootstrap.min.css" integrity="sha384-mLBxp+1RMvmQmXOjBzRjqqr0dP9VHU2tb3FK6VB0fJN/AOu7/y+CAeYeWJZ4b3ii" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
   
 </head>
 
 <body>
-    <!-- Nav Bar elements source: https://getbootstrap.com/docs/4.0/components/navbar/-->
-    <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark">
+<!-- source for nav bar: https://bootswatch.com/cyborg/-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Latitude Analysis</a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarColor02">
+    <ul class="navbar-nav ml-auto"> <!--Right justifies menu items-->
+        
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Temperature</a>
+          <a class="dropdown-item" href="#">Humidity</a>
+          <a class="dropdown-item" href="#">Cloudiness</a>
+          <a class="dropdown-item" href="#">Wind Speed</a>
+        </li>
 
-        <!-- Page Title in Navbar for home page navigation -->
-        <a class="navbar-brand" href="index.html">Latitude Analysis</a>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Comparison</a>
+        </li>
 
-        <!-- Change navbar style when screen is smaller (toggle to hamburger menu) -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-
-            <!-- Align navbar elements right -->
-            <ul class="navbar-nav ml-auto">
-                
-                <!-- Create navbar dropdown element for plots pages -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Plots
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="temp.html">Temperature</a>
-                        <a class="dropdown-item" href="humidity.html">Humidity</a>
-                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                        <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
-                    </div>
-                </li>
-
-                <!-- Navbar Comparison page link -->
-                <li class="nav-item">
-                    <a class="nav-link" href="comparison.html">Comparison</a>
-                </li>
-
-                <!-- Navbar Data page link -->
-                <li class="nav-item">
-                    <a class="nav-link" href="data.html">Data</a>
-                </li>
-            </ul>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Data</a>
+     
         </div>
-    </nav>
+      </li>
+    </ul>
+  </div>
+</nav>
+
 
     <div class='container'>
         <div class='row'>
@@ -90,9 +82,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
-<footer class="page-footer font-small bg-dark">
-    <div class ="footer-copyright text-center py-3" style="color:lightgrey">
-        © Copyright 2020 Ben Anderson
-    </div>
-</footer>
 </html>
