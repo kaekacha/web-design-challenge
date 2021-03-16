@@ -12,7 +12,7 @@
 <body>
 <!-- source for nav bar: https://bootswatch.com/cyborg/-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Latitude Analysis</a>
+  <a class="navbar-brand" href="#">Latitude</a>
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -43,21 +43,18 @@
   </div>
 </nav>
 
-
     <div class='container'>
         <div class='row'>
             <div class='col-md-7'>
                 <div class='box' id="leftbox">
                     <h1 align="center">Summary: Latitude vs. X</h1>
                     <hr>
-                    <img src= "Visualizations/Lat_v_Temp.png" align="left" height=220px>
+                    <img src= "images/scatter1_latvstemp.png" align="left" height=220px>
                     <h4>
-                        This project analyzed weather factors for over 500 cities collected from the OpenWeatherMap API.
-                        The goal was to compare the changes in temperature, cloudiness, humidity and wind speed across different latitudes.
+                        This project utilized the citypy Python library, the OpenWeatherMap API, to create a representative model of weather across 500+ global cities of varying distance from the equator. 
                         <br>
                         <br>
-                        The dataset was cleaned and analyzed using the Matplotlib module for Python, which produced the visualizations
-                        provided on this webpage, each with its own explanation and analysis.
+                        After assembling the dataset, we used Matplotlib to plot various weather factors vs. latitude; weather factors assessed included: temperature (F), humidity (%), cloudiness (%), and wind speed (mph).This site provides the source data for the analysis, visualizations created as part of the analysis, and explanations and descriptions of any trends and correlations.
                     </h4>
                 </div>
             </div>
@@ -66,10 +63,10 @@
                     <h1 align="center">Visualizations</h1>
                     <hr>
                     <div>
-                        <a href="temp.html"><img src= "Visualizations/Lat_v_Temp.png" id="vizimage"></a>
-                        <a href="cloudiness.html"><img src= "Visualizations/Lat_v_Cloudiness.png" id="vizimage"></a>
-                        <a href="humidity.html"><img src= "Visualizations/Lat_v_Humidity.png" id="vizimage"></a>
-                        <a href="windspeed.html"><img src= "Visualizations/Lat_v_WindSpeed.png" id="vizimage"></a>
+                        <a href="temp.html"><img src= "images/scatter1_latvstemp.png" id="vizimage"></a>
+                        <a href="cloudiness.html"><img src= "images/scatter3_latvscloud.png" id="vizimage"></a>
+                        <a href="humidity.html"><img src= "images/scatter2_latvshumidity.png" id="vizimage"></a>
+                        <a href="windspeed.html"><img src= "images/scatter4_latvswind.png" id="vizimage"></a>
                     </div>
                 </div>
             </div>
