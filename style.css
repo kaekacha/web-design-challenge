@@ -3,24 +3,24 @@
     padding: 20px;
     margin-top: 40px;
     margin-bottom: 40px;
-    color: darkslategray;
-    background: white;
+    color: black;
+    background: whitesmoke;
 }
 #rightbox {
     height: 400px;
     padding: 20px;
     margin-top: 40px;
     margin-bottom: 40px;
-    color: darkslategray;
-    background: white;
+    color: black;
+    background: whitesmoke;
 }
 #vizbox {
-    color: darkslategray;
+    color: black;
     margin-top: 20px;
     margin-bottom: 100px;
 }
 body {
-    background: white;
+    background: whitesmoke;
 }
 
 img {
@@ -32,13 +32,13 @@ img {
 #vizimage:hover, #imgbox:hover {
     outline: 0px solid transparent;
     padding: 5px 5px;
-    border: 5px solid darkslategray;
+    border: 5px solid black;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
  }
 
  #vizimage, #imgbox {
-    outline: 0px solid darkslategray;
+    outline: 0px solid black;
     padding: 0px 0px;
     border: 5px solid transparent;
     -webkit-transition: all 0.2s ease-in-out;
@@ -50,9 +50,9 @@ img {
 
 #plotviz {
     height:127px;
-    outline: 4px solid transparent;
+    outline: 4px solid whitesmoke;
     padding: 2px 2px;
-    border: 4px solid darkslategray;
+    border: 4px solid whitesmoke;
 
 }
 
@@ -64,5 +64,5 @@ img {
 #dataPage {
     margin-top: 20px;
     margin-bottom: 20px;
-    color:darkslategray;
+    color:whitesmoke;
 }
