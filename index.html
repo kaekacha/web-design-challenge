@@ -3,16 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Latitude Analysis</title>
+    <title>Weather Analysis</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/yeti/bootstrap.min.css" integrity="sha384-mLBxp+1RMvmQmXOjBzRjqqr0dP9VHU2tb3FK6VB0fJN/AOu7/y+CAeYeWJZ4b3ii" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-  
+   
 </head>
 
 <body>
 <!-- source for nav bar: https://bootswatch.com/cyborg/-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Latitude</a>
+  <a class="navbar-brand" href="index.html">Weather Analysis</a>
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -24,18 +24,18 @@
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Temperature</a>
-          <a class="dropdown-item" href="#">Humidity</a>
-          <a class="dropdown-item" href="#">Cloudiness</a>
-          <a class="dropdown-item" href="#">Wind Speed</a>
+          <a class="dropdown-item" href="maxtemp.html">Temperature</a>
+          <a class="dropdown-item" href="humidity.html">Humidity</a>
+          <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+          <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="#">Comparison</a>
+            <a class="nav-link" href="comparison.html">Comparison</a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="#">Data</a>
+            <a class="nav-link" href="data.html">Data</a>
      
         </div>
       </li>
@@ -51,10 +51,10 @@
                     <hr>
                     <img src= "images/scatter1_latvstemp.png" align="left" height=220px>
                     <h4>
-                        This project utilized the citypy Python library, the OpenWeatherMap API, to create a representative model of weather across 500+ global cities of varying distance from the equator. 
+                        This project utilized the citypy Python library and the OpenWeatherMap API to create a representative model of weather across 500+ global cities of varying distance from the equator. 
                         <br>
                         <br>
-                        After assembling the dataset, we used Matplotlib to plot various weather factors vs. latitude; weather factors assessed included: temperature (F), humidity (%), cloudiness (%), and wind speed (mph).This site provides the source data for the analysis, visualizations created as part of the analysis, and explanations and descriptions of any trends and correlations.
+                        After assembling the dataset, Matplotlib was used to plot weather factors vs. latitude; weather factors assessed included: temperature (F), humidity (%), cloudiness (%), and wind speed (mph). This site provides the source data for the analysis, visualizations created as part of the analysis, and descriptions of any trends and correlations.
                     </h4>
                 </div>
             </div>
